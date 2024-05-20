@@ -1,0 +1,16 @@
+<div class="card">
+
+  <div class="card__title">
+    <h3>{{ pokemon.name }}</h3>
+  </div>
+
+
+  <div class="card__body">
+    <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}">
+  </div>
+  <div class="card__status">
+    <span *ngFor="let t of pokemon.types" class="card__status__type">
+      {{ t.type.name }}
+    </span>
+  </div>
+</div>

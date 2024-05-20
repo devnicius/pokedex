@@ -1,0 +1,104 @@
+.card {
+  /* border: 1px black solid; */
+  width: 30%;
+  min-width: 250px;
+  max-width: 350px;
+  height: 350px;
+  display: flex;
+  margin: 100px;
+  flex-direction: column;
+  background-color: #9b9b9b;
+  color: whitesmoke;
+  border-radius: 15px;
+  user-select: none;
+
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card__title {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__body {
+  display: flex;
+  justify-content: center;
+  /* background-color: #616161; */
+  border-bottom: 1px solid #616161;
+  border-top: 1px solid #616161;
+  width: 90%;
+  height: 65%;
+border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__status {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card__body > img {
+  width: 175px;
+}
+
+.card__status__type {
+  background-color: crimson;
+  color: black;
+  font-weight: bolder;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 4%;
+
+  box-shadow: 3px 4px 14px -2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 3px 4px 14px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 4px 14px -2px rgba(0,0,0,0.75);
+}
+
+
+/*
+Effects
+*/
+
+.card:hover {
+  -xpedu-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+
+  transition: 0.15s ease-in;
+}
+.card {
+  -xpedu-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+
+  transition: 0.35s ease-out;
+}
+
+
+
+.card__body:hover, .card__status__type:hover, .card__title:hover {
+  -xpedu-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+
+  transition: 0.2s ease;
+}
+
+
+
+.card__body, .card__status__type, .card__title {
+  -xpedu-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+
+  transition: 0.3s ease-out;
+}
