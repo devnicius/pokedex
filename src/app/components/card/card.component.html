@@ -9,7 +9,7 @@
     <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}">
   </div>
   <div class="card__status">
-    <span *ngFor="let t of pokemon.types" class="card__status__type">
+    <span *ngFor="let t of pokemon.types" class="card__status__type" id="{{ t.type.name }}">
       {{ t.type.name }}
     </span>
   </div>

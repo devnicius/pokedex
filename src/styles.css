@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+/* https://www.color-hex.com/color-palette/69514 */
+/* https://material.angular.io/ */
+body {
+  background-color: #363b81;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  /* color: #363b81; */
+  /* text-shadow: 1px 1px 3px rgba(255,221,8,1); */
+}

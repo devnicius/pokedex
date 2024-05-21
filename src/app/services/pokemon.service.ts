@@ -9,19 +9,30 @@ import { PokemonData } from '../models/pokemonData'
   providedIn: 'root'
 })
 export class PokemonService {
-  private baseURL:string = '';
+  private pokeBaseURL:string = '';
+  private locationBaseURL:string = '';
   private Data:PokemonData | any;
   //private req:any;
   constructor(
     private http:HttpClient
   ) {
-    this.baseURL = environment.pokeApi;
+    this.pokeBaseURL = environment.pokeApi
+    // this.locationBaseURL = environment.pokeLocationApi
   }
 
-  getPokemon(pokemonName:string):Observable<PokemonData> {
+  getPokemon(pokemonName:number|string):Observable<PokemonData> {
     this.Data = this
                .http
-               .get<PokemonData>(`${this.baseURL}${pokemonName}`)
+               .get<PokemonData>(`${this.pokeBaseURL}${pokemonName}`)
     return this.Data;
   }
+
+
+
+  // getLocation(locationnName:number|string):Observable<PokemonData> {
+  //   this.Data = this
+  //              .http
+  //              .get<PokemonData>(`${this.locationBaseURL}${locationnName}`)
+  //   return this.Data;
+  // }
 }

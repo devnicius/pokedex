@@ -1,14 +1,14 @@
 .card {
   /* border: 1px black solid; */
-  width: 30%;
+  width: 35%;
   min-width: 250px;
-  max-width: 350px;
+  max-width: 400px;
   height: 350px;
   display: flex;
-  margin: 100px;
+  align-items: center;
+  margin-bottom: 35px;
   flex-direction: column;
-  background-color: #9b9b9b;
-  color: whitesmoke;
+  background-color: #5db9ff;
   border-radius: 15px;
   user-select: none;
 
@@ -20,14 +20,17 @@
 .card__title {
   margin-left: auto;
   margin-right: auto;
+  text-transform: capitalize;
+
 }
 
 .card__body {
+  background-color: #ff1f1f;
   display: flex;
   justify-content: center;
   /* background-color: #616161; */
-  border-bottom: 1px solid #616161;
-  border-top: 1px solid #616161;
+  border-bottom: 3px solid #fbd743;
+  border-top: 2px solid #fbd743;
   width: 90%;
   height: 65%;
 border-radius: 10px;
@@ -40,6 +43,7 @@ border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 90%;
 }
 
 .card__body > img {
@@ -47,18 +51,79 @@ border-radius: 10px;
 }
 
 .card__status__type {
-  background-color: crimson;
-  color: black;
+
   font-weight: bolder;
   padding: 5px;
   border-radius: 3px;
   margin: 4%;
-
   box-shadow: 3px 4px 14px -2px rgba(0,0,0,0.75);
   -webkit-box-shadow: 3px 4px 14px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 4px 14px -2px rgba(0,0,0,0.75);
 }
 
+
+/*
+Types
+*/
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: aqua;
+}
+
+#electric {
+  background-color: yellow !important;
+}
+
+#flying {
+  background-color: antiquewhite;
+}
+
+#normal {
+  background-color: cadetblue;
+}
+
+#dragon {
+  background-color: aquamarine;
+}
+
+#psychic {
+  background-color: burlywood;
+}
+
+#grass {
+  background-color: green;
+}
+
+#poison {
+  background-color: darkmagenta;
+}
+
+#fairy {
+  background-color: pink;
+}
+
+#rock {
+  background-color: gray;
+}
+
+#ground {
+  background-color: saddlebrown;
+}
+
+#ice {
+  background-color: darkturquoise;
+}
+
+#ghost {
+  background-color: rebeccapurple;
+}
+
+#fighting {
+  background-color: goldenrod;
+}
 
 /*
 Effects
@@ -69,9 +134,9 @@ Effects
   -ms-transform: scale(1.01);
   transform: scale(1.01);
 
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,1);
+  box-shadow: 10px 10px 5px 0px #fbd743;
+  -webkit-box-shadow: 10px 10px 5px 0px #fbd743;
+  -moz-box-shadow: 10px 10px 5px 0px #fbd743;
 
   transition: 0.15s ease-in;
 }

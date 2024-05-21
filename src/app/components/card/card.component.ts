@@ -16,7 +16,22 @@ export class CardComponent implements OnInit {
       front_default: ''
     }
   }
-  name:string = 'pikachu';
+
+  name:string|number = 'pikachu';
+/**Types
+ * igglybuff
+ * vileplume
+ * dragonite
+ * charizard
+ * blastoise
+ * alakazam
+ * onix
+ * articuno
+ * gengar
+ * machop
+ */
+
+
   constructor(
     private service:PokemonService
   ) { }
@@ -26,7 +41,7 @@ export class CardComponent implements OnInit {
       next: (res) => {
         this.pokemon = {
           id: res.id,
-          name: res.name,
+          name: res.name.replace('-', ' '),
           types: res.types,
           sprites: res.sprites
         }
