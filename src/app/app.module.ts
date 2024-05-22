@@ -1,19 +1,20 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
-import { InputComponent } from './components/input/input.component';
+
+
 
 
 
 @NgModule({
     declarations: [
-        AppComponent,
-        CardComponent,
+        AppComponent
     ],
     providers: [
     // pode registrar o service, para que quem pertença ao módulo enxergue o service
@@ -23,7 +24,8 @@ import { InputComponent } from './components/input/input.component';
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
-        InputComponent
+        BrowserAnimationsModule,
+        CardComponent
     ],
     schemas: [
       CUSTOM_ELEMENTS_SCHEMA
