@@ -1,0 +1,68 @@
+
+/*
+Types
+*/
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: aqua;
+}
+
+#electric {
+  background-color: yellow !important;
+}
+
+#flying {
+  background-color: antiquewhite;
+}
+
+#normal {
+  background-color: cadetblue;
+}
+
+#dragon {
+  background-color: aquamarine;
+}
+
+#psychic {
+  background-color: burlywood;
+}
+
+#grass {
+  background-color: green;
+}
+
+#poison {
+  background-color: darkmagenta;
+}
+
+#fairy {
+  background-color: pink;
+}
+
+#rock {
+  background-color: gray;
+}
+
+#ground {
+  background-color: saddlebrown;
+}
+
+#ice {
+  background-color: darkturquoise;
+}
+
+#ghost {
+  background-color: rebeccapurple;
+}
+
+#dark {
+  background-color: black;
+  color: #fae799;
+}
+
+#fighting {
+  background-color: goldenrod;
+}

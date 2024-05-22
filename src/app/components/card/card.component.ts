@@ -11,7 +11,7 @@ import { ObservableInput } from 'rxjs';
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
-  styleUrls: ['./card.component.css'],
+  styleUrls: ['./card.component.css', './card-types.component.css', './card-input.component.css', './card-effects.component.css'],
   standalone: true,
   imports:
     [NgFor,
@@ -70,8 +70,6 @@ export class CardComponent implements OnInit {
       error: (err) => console.log('not found'),
     });
   }
-
-
 
   // lazySample(
   //   notifierSelector: (value: any) => Observable<any|unknown>,

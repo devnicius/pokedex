@@ -1,0 +1,38 @@
+/*
+Effects
+*/
+
+.card:hover {
+  -xpedu-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01);
+
+  box-shadow: 10px 10px 5px 0px #fbd743;
+  -webkit-box-shadow: 10px 10px 5px 0px #fbd743;
+  -moz-box-shadow: 10px 10px 5px 0px #fbd743;
+
+  transition: 0.15s ease-in;
+}
+.card {
+  -xpedu-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+
+  transition: 0.35s ease-out;
+}
+
+.card__body:hover, .card__status__type:hover, .card__title:hover {
+  -xpedu-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+
+  transition: 0.2s ease;
+}
+
+.card__body, .card__status__type, .card__title {
+  -xpedu-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+
+  transition: 0.3s ease-out;
+}

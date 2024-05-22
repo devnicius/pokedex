@@ -1,5 +1,4 @@
 .card {
-  /* border: 1px black solid; */
   width: 35%;
   min-width: 250px;
   max-width: 400px;
@@ -11,33 +10,27 @@
   background-color: #5db9ff;
   border-radius: 20px;
   user-select: none;
-
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
-
 .card__title {
   margin-left: auto;
   margin-right: auto;
   text-transform: capitalize;
-
 }
-
 .card__body {
   background-color: #ff1f1f;
   display: flex;
   justify-content: center;
-  /* background-color: #616161; */
   border-bottom: 3px solid #fbd743;
   border-top: 2px solid #fbd743;
   width: 90%;
   height: 65%;
-border-radius: 20px;
+  border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
 }
-
 .card__status {
   padding-top: 10px;
   display: flex;
@@ -45,13 +38,10 @@ border-radius: 20px;
   justify-content: center;
   width: 90%;
 }
-
 .card__body > img {
   width: 175px;
 }
-
 .card__status__type {
-
   font-weight: bolder;
   padding: 5px;
   border-radius: 3px;
@@ -59,161 +49,4 @@ border-radius: 20px;
   box-shadow: 3px 4px 14px -2px rgba(0,0,0,0.75);
   -webkit-box-shadow: 3px 4px 14px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 3px 4px 14px -2px rgba(0,0,0,0.75);
-}
-
-
-/*
-Types
-*/
-#fire {
-  background-color: red;
-}
-
-#water {
-  background-color: aqua;
-}
-
-#electric {
-  background-color: yellow !important;
-}
-
-#flying {
-  background-color: antiquewhite;
-}
-
-#normal {
-  background-color: cadetblue;
-}
-
-#dragon {
-  background-color: aquamarine;
-}
-
-#psychic {
-  background-color: burlywood;
-}
-
-#grass {
-  background-color: green;
-}
-
-#poison {
-  background-color: darkmagenta;
-}
-
-#fairy {
-  background-color: pink;
-}
-
-#rock {
-  background-color: gray;
-}
-
-#ground {
-  background-color: saddlebrown;
-}
-
-#ice {
-  background-color: darkturquoise;
-}
-
-#ghost {
-  background-color: rebeccapurple;
-}
-
-#dark {
-  background-color: black;
-  color: #fae799;
-}
-
-#fighting {
-  background-color: goldenrod;
-}
-
-/*
-Effects
-*/
-
-.card:hover {
-  -xpedu-transform: scale(1.01);
-  -ms-transform: scale(1.01);
-  transform: scale(1.01);
-
-  box-shadow: 10px 10px 5px 0px #fbd743;
-  -webkit-box-shadow: 10px 10px 5px 0px #fbd743;
-  -moz-box-shadow: 10px 10px 5px 0px #fbd743;
-
-  transition: 0.15s ease-in;
-}
-.card {
-  -xpedu-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-
-  transition: 0.35s ease-out;
-}
-
-
-
-.card__body:hover, .card__status__type:hover, .card__title:hover {
-  -xpedu-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-
-  transition: 0.2s ease;
-}
-
-
-
-.card__body, .card__status__type, .card__title {
-  -xpedu-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-
-  transition: 0.3s ease-out;
-}
-
-
-
-
-/*Input */
-
-.form__input {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-  color: #fbd743;
-  border: 2px solid #fbd743;
-  border-radius: 12.5px;
-  padding: 7.5px;
-  text-align: center;
-}
-
-.form__input__btn {
-  width: 100%;
-
-  margin-top: 5px;
-  border-radius: 10px;
-  text-decoration: none;
-
-  background-color: #5db9ff;
-  border: 1.5px #fbd743 solid;
-  font-weight: bolder;
-}
-
-
-.form__input__btn:hover {
-  -xpedu-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
-  background-color: #fadb5e;
-  transition: 0.035s ease-in;
-}
-
-.form__input__btn:active {
-  -xpedu-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  background-color: #fbd743;
-  transition: 0.03s ease-out;
 }
