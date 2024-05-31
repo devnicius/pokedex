@@ -5,7 +5,9 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #363b81;
-  height: 90vh;
+  background-color: #474c95;
+  max-height: 900px;
+  height: 95vh;
+  min-height: 500px;
   width: 100%
 }

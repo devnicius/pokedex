@@ -1,12 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PokemonData } from 'src/app/models/pokemonData';
 import { PokemonService } from 'src/app/services/pokemon.service';
-import { NgFor } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
 import { concat, debounce, debounceTime, defer, exhaustMap, filter, finalize, map, merge, mergeMap, MonoTypeOperatorFunction, Observable, of, pipe, ReplaySubject, takeUntil, takeWhile, tap, throttleTime, timer, windowCount, windowTime } from 'rxjs';
-import { ObservableInput } from 'rxjs';
+import { PipesModule } from 'src/app/pipes/pipes/pipes.module';
 
 @Component({
   selector: 'app-card',
@@ -17,6 +17,8 @@ import { ObservableInput } from 'rxjs';
     [NgFor,
       MatInputModule,
       MatFormFieldModule,
+      CommonModule,
+      PipesModule
     ]
 })
 export class CardComponent implements OnInit {
@@ -29,7 +31,7 @@ export class CardComponent implements OnInit {
     }
   }
   @Input()
-  name:string|number = 'tyranitar';
+  name:string|number = '';
 /**Types for color test
  * igglybuff
  * vileplume
@@ -41,6 +43,7 @@ export class CardComponent implements OnInit {
  * articuno
  * gengar
  * machop
+ * Walking-Wake
  */
 
 
@@ -62,7 +65,7 @@ export class CardComponent implements OnInit {
       next: (res) => {
         this.pokemon = {
           id: res.id,
-          name: res.name.replace('-', ' '),
+          name: res.name,
           types: res.types,
           sprites: res.sprites
         }
